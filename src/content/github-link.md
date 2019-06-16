@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Github Source
+title: OOP
 image: img/callum-shaw-555357-unsplash.jpg
-author: Ghost
+author: Creatijin
 date: 2019-03-10T10:00:00.000Z
 tags:
   - Source

@@ -1,8 +1,6 @@
-- id: Ghost
+- id: Creatijin
   avatar: avatars/ghost.png
-  bio: The professional publishing platform
-  twitter: TryGhost
-  facebook: ghost
+  bio: Front-end Developer
   website: https://ghost.org/
   location: On a plane
 - id: Another Author
