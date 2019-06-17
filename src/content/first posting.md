@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "First Posting"
 author: Creatijin
 tags: ["javascript"]
