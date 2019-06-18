@@ -100,15 +100,18 @@ const SubscribeButton = styled.a`
   padding: 4px 10px;
   border: #fff 1px solid;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1em;
   border-radius: 10px;
   opacity: 0.8;
+  font-weight:500;
+  transition: all 0.3s;
 
   :hover {
     text-decoration: none;
     opacity: 1;
     cursor: pointer;
+    background-color:rgba(255,255,255,0.3);
   }
 `;
 
@@ -175,7 +178,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
             )}
           </SocialLinks>
           {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
+            <SubscribeButton onClick={this.openModal}>구독하기</SubscribeButton>
           )}
           {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         </SiteNavRight>

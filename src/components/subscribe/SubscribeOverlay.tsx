@@ -189,10 +189,9 @@ class SubscribeModal extends React.Component<any, SubscribeState> {
         <SubscribeOverlayClose onClick={this.close} />
         <SubscribeOverlayContent>
           <SubscribeLogo />
-          <SubscribeOverlayTitle>Subscribe to {config.title}</SubscribeOverlayTitle>
+          <SubscribeOverlayTitle>{config.title} 블로그 구독하기</SubscribeOverlayTitle>
           <SubscribeOverlayDescription>
-            Stay up to date! Get all the latest &amp; greatest posts delivered straight to your
-            inbox
+          Creatijin 블로그의 최식 소식과 게시물을<br/>이메일로 받아 보실 수 있습니다.
           </SubscribeOverlayDescription>
           <SubscribeForm />
         </SubscribeOverlayContent>
