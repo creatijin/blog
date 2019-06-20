@@ -23,7 +23,7 @@ draft: false
 
 Gatsby는 React를 사용하면서 웹사이트 제작을 쉽게 할 수 있도록 편의 기능을 많이 제공하고 최근 몇년전부터 React, Vue 등의 인기와 수요가 늘면서 React를 능숙하게 다루는 사람들이 늘어났고 그런 사람들에게 있어서는 더 할 나위 없는 잘 만들어진 도구라고 느꼈다.
 
-![gatsby-work](/Users/joseungjin/Desktop/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3/Posting/img/gatsby-work.png)
+![gatsby-work](../img/gatsby-work.png)
 
 위 이미지는 Gatsby 홈페이지에 있는 Gatsby의 동작 방식을 설명해 주는 이미지이다.
 
