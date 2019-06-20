@@ -2,18 +2,18 @@
 layout: post
 title: "Creatijin 개츠비 블로그 오픈"
 author: Creatijin
-tags: ["Gatsby"]
+tags: ["javascript"]
 image: ../img/demo1.jpg
-date: "2019-06-20T04:57:00.000Z"
+date: "2019-06-21T01:05:00.000Z"
 draft: false
 ---
 
 
-##Gatsby를 선택한 이유
+# Gatsby를 선택한 이유
 
 첫 글인만큼 어떻게 시작할지 고민을 많이 했다.
 
-원래는 Tistory로 블로그를 운영하고 있는데 정적 사이트에 대한 관심을 가지면서 개츠비로 이전하게 되었다.
+원래는 Tistory로 블로그를 운영하고 있는데 승돌이의 소개로 정적 사이트에 대한 관심을 가지면서 개츠비로 이전하게 되었다.
 
 개츠비는 **정적 사이트 생성기(Static site Generator)**로써 최근 Netlify와 Gatsby를 중심으로 인기있는 생성기이다. **Netlify**는 정적 사이트를 배포하는 방식이다. 여기서 정적 사이트라는건 HTML, CSS, JavaScript로만 만들어진 사이트 이다.
 
@@ -23,7 +23,7 @@ draft: false
 
 Gatsby는 React를 사용하면서 웹사이트 제작을 쉽게 할 수 있도록 편의 기능을 많이 제공하고 최근 몇년전부터 React, Vue 등의 인기와 수요가 늘면서 React를 능숙하게 다루는 사람들이 늘어났고 그런 사람들에게 있어서는 더 할 나위 없는 잘 만들어진 도구라고 느꼈다.
 
-![gatsby-work](../img/gatsby-work.png)
+![gatsby-work](/Users/joseungjin/Desktop/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3/Posting/img/gatsby-work.png)
 
 위 이미지는 Gatsby 홈페이지에 있는 Gatsby의 동작 방식을 설명해 주는 이미지이다.
 
@@ -37,7 +37,20 @@ Gatsby는 **GraphQL을 기본적으로 사용**하여 **빌드** 부분에서 �
 
 이 과정을 거치면 정적 사이트(Static site)를 만들어주며 Host는 AWS, Netlify GitHub Pages 등으로 가능한데 **Netlify를 추천**하고 있고 실제로 사용해보니 편한부분이 많다.
 
+Gatsby가 다른 도구들과 다른 부분은 기존의 사이트를 운영할 때는 데이터소스로 API서버나 파일을 제공해야하는 반면 Gatsby는 GraphQL로 가져온 **데이터를 빌드할 때 모두 가져와 정적파일의 데이터에 포함**하게 된다.
+
+내가 알아본 Gatsby는 이 정도지만 더 좋은 기능과 Gatsby 자체에서 제공하는 플러그인등 많은 기능들이 준비되어 있다.
 
 
-## 블로그를 이용한 공부에 대해서
 
+# 블로그를 이용한 공부에 대해서
+
+전 블로그에서는 겉핥기 식의 내용들을 많이 올렸던거 같다. 아무래도 내가 프론트 엔드 쪽을 시작한지 얼마 안된 상태였고 노력도 부족했던거 같다.
+
+그래서 이번에 블로그 이전을 하면서 조금 더 핵심과 디테일을 가지고 포스팅을 할 예정이다 물론 더 많은 공부와 시간이 들겠지만 나를 위한 시간이기에 투자할 가치가 있다!
+
+물론 틀린 부분도 모자른 부분도 있기 마련이지만 그거 또한 배움이기에 두려움은 버려야할 꺼같다.
+
+다음 글은 웹의 기본이라 할 수 있는 HTTP & NetWork 를 디테일하게 공부해보려 하고 React와 Javascript 등 올릴 예정이다.
+
+그럼 이만!
