@@ -2,7 +2,7 @@
 layout: post
 title: "Creatijin 개츠비 블로그 오픈"
 author: Creatijin
-tags: ["javascript"]
+tags: ["Gatsby"]
 image: ../img/demo1.jpg
 date: "2019-06-21T01:05:00.000Z"
 draft: false
