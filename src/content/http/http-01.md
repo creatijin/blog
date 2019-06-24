@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "웹과 네트워크의 기본"
+title: "웹과 네트워크의 기본 - 01"
 author: Creatijin
 tags: ["HTTP&NetWork"]
 image: ../img/http-posting-bgs.jpg
@@ -8,7 +8,7 @@ date: "2019-06-23T12:41:00.000Z"
 draft: false
 ---
 
-## 웹과 네트워크의 기본
+## 웹과 네트워크의 기본 - 01
 
 ### 네트워크의 기본은 TCP/IP
 
