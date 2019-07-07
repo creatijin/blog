@@ -3,7 +3,7 @@ layout: post
 title: "Basic - Array"
 author: Creatijin
 tags: ["javascript"]
-image: ../img/basic-posting-array.jpg
+image: ../img/javascript-posting-array.jpg
 date: "2019-07-08T03:05:00.000Z"
 draft: false
 ---
