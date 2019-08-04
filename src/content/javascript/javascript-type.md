@@ -117,6 +117,57 @@ typeof 연산자의 반환 값은 'string'이다. 해석해보면 typeof 92; 는
 
 
 
+### undefined 그리고 undefined?
+
+위에서 봤듯 undefiend의 typeof 값은 'undefined'다, 그리고 변수에 아무것도 할당 하지 않아도 똑같이 'undefiend'로 나온다.
+
+~~~javascript
+var a;
+typeof a; //undefiend
+var b = 92;
+var c;
+
+//변수 b에 변수 c를 재할당
+b = c;
+
+typeof b; // 'undefiend'
+typeof c; // 'undefiend'
+~~~
+
+b에 92라는 'number'타입을 할당했지만 다시 b에 **아무것도 할당하지 않은 c를 재할당**했다. 그리고 typeof 연산자로 b,c를 확인해보면 **'undefiend'가 확인**된다.
+
+**'undefiend'에는** 두가지 의미가 있다.
+
+- 값이 없는 - 접근 가능한 스코프에 **변수가 선언되었으나** 아무런(현재) 값도 할당되지 않은 상태
+- 선언되지 않은 - 접근 가능한 스코프에 **변수 자체가 선언조차 되지 않은 상태**
+
+~~~javascript
+var a;
+
+//값이 없는
+a; // 'undefiend'
+
+//선언되지 않은
+b; // Uncaught ReferenceError: b is not defined at <anonymous>:1:1
+~~~
+
+b를 값을 확인했을때 'b is not defined'(b가 정의되지 않음)는 'undefiend'(정의되지 않은)과 같아 보일 수 있지만 의미가 완전 다르다.
+
+#####'b is not defined' —> 'b is not found' or 'b is not declared' 로 나온다면 이해하기 편했을텐데...
+
+여기서 한가지 더 헷갈리게 하는 부분이 있다. 선언되지 않은 'undefied' 변수의 typeof 연산자 값이다.
+
+~~~javascript
+var a;
+
+typeof a; // 'undefied'
+typeof b; // 'undefied'
+~~~
+
+**선언되지 않은 'undefied'의 typeof 연산자 값은 'undefied'**가 나와버린다. 선언되지 않은 변수임에도 불구하고 **브라우저는 오류 처리하지 않는다.** 이러한 점은 분명 자바스크립트를 사용하는 프로그래머들에게 혼란이 올지도 모른다. 하지만 이것이 **typeof만의 독특한 안전가드**다.
+
+
+
 ## 3.강제변환
 
 
