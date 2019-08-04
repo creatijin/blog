@@ -168,11 +168,58 @@ typeof b; // 'undefied'
 
 
 
-## 3.강제변환
+### 안전가드(safety guard)
+
+typeof의 안전 가드는 브라우저가 여러 스크립트 파일의 변수들이 전역 네임스페이스(namespace)을 공유할때 사용하면 좋다. 디버깅 작업을 할때 DEBUG라는 변수가 선언되어있는지 확인 해야할때 사용 가능하다.
+
+~~~javascript
+if (typeof DEBUG !== "undefined") {
+  console.log("디버깅을 시작합니다.");
+}
+~~~
+
+내장 API 기능을 체크할 때에도 에러가 나지 않게 도와준다.
 
 
 
+여기서 한가지 더 생각해 볼 수 있는것은 **Copy And Paste**(복사 및 붙어넣기) 상황에서 유용하다.
 
+~~~javascript
+function doSome() {
+  var helper =
+      (typeof FeatureZ !== 'undefiend') ? FeatureZ : function() {};
+  var val = helper();
+}
+~~~
+
+doSome 함수는 FeatureZ 변수가 존재하면 그대로 사용하고 없으면 함수를 정의한다. 이런식으로 사용하면 다른 사람이 안전하게 변수를 체크할 수 있다.
+
+
+
+typeof  안전가드 없이 전역변수를 체크하는 다른 방법이 있다.
+
+**전역 변수가 모두 전역 객체의 프로퍼티(브라우저는 window)라는 점을 이용**하는것이다.
+
+~~~javascript
+if (window.DEBUG) {
+ 	// ...
+}
+~~~
+
+어떤 객체의 프로퍼티를 접근할 때 그 프로퍼티가 존재하지 않아도 ReferenceError가 출력되지 않는다.
+
+하지만 위 방법은 다중 스크립트 환경[^2]일때 window 객체를 통한 전역 변수 참조는 가급적 피하는 것이 좋다.
+
+[^2]:브라우저뿐만 아닌 서버에서 실행되는 경우 예) node.js
+
+
+
+## 정리
+
+1. 자바스크립트에는 7가지 내장 타입[null, undefined, boolean, number, string, object, symbol(ES6부터 추가)]이 있다.
+2. 변수는 타입이 없고 값은 타입이 있다, 타입은 값의 내재된 특성을 정의한다.
+3. 자바스크립트 엔진은 'undefiend'(정의되지 않은), 'undeclared'(선언되지 않은) 두가지를 전혀 다르게 취급한다. 하지만 자바스크립트는 typeof 연산자는 'undefiend'로 출력해 버린다.
+   - 하지만 이러한 점을 이용하여 typeof 안전 가드를 선언되지 않은 변수에 사용할 수 있다.
 
 
 
