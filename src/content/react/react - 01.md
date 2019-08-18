@@ -3,7 +3,7 @@ layout: post
 title: "리액트 프로젝트 - 01"
 author: Creatijin
 tags: ["react"]
-image: ../img/react-posting1-bg.jpg
+image: ../img/react-posting-bg.jpg
 date: "2019-08-16T01:47:00.000Z"
 draft: false
 ---
