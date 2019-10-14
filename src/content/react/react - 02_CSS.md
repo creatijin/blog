@@ -30,7 +30,7 @@ CSS파일에서는 **클래스명이 겹치는 경우가 많은데 css-module에
 
 아래 코드는 css-module을 사용해서 작성한것으로 `classnames`패키지를 이용한 모습이다.
 
-~~~react
+~~~javascript
 //일반적인 사용
 <div className={`${style.name} ${style.small}`}>creatijin</div>;
 
@@ -63,7 +63,7 @@ Css-in-js를 지원하는 패키지도 다양하며 문법도 다양하다 하�
 
 Css-in-js를 지원하는 패키지중에 하나인 styled-components의 사용법을 한번 보자.
 
-~~~react
+~~~javascript
 import styled from 'styled-componnents';
 
 const BoxCom = style.div`
