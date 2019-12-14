@@ -48,7 +48,6 @@ import cn from 'classnames';
 Css-module 을 사용해서 확인해보면 HTML에서 class가 **[파일이름]\_[클래스이름]\__[해쉬값] 형식**으로 입력된다.
 
 
-
 ### Sass로 작성
 
 Sass 문법으로 작성한 파일을 별도의 빌드 단계를 거쳐서 CSS 파일로 변환해야하는데 create-react-app 에서는 `node-sass` 패키지를 설치해야 한다. Sass를 CSS로 빌드할 때 사용된다.
