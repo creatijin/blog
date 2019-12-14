@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "리액트 프로젝트 - 02 (1) CSS"
+title: "리액트 프로젝트 - 02 (2) SPA "
 author: Creatijin
 tags: ["react"]
 image: ../img/react-posting-bg.jpg
-date: "2019-10-14T11:43:00.000Z"
+date: "2019-12-14T11:43:00.000Z"
 draft: false
 ---
 
