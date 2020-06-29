@@ -1,12 +1,4 @@
----
-layout: post
-title: "스코프와 클로저"
-author: Creatijin
-tags: ["javascript"]
-image: ../img/javascript-posting1-bg.jpg
-date: "2019-07-18T01:47:00.000Z"
-draft: false
----
+
 
 # 스코프와 클로저
 
