@@ -1,10 +1,10 @@
 ---
 layout: post
-title: '리액트 프로젝트 - 03 (3) javascript'
+title: '리액트 프로젝트 - 05 (5) javascript-test'
 author: Creatijin
-tags: ['react']
+tags: ['react', 'javascript']
 image: ../img/react-posting-bg.jpg
-date: '2020-04-22T17:41:00.000Z'
+date: '2020-04-30T17:41:00.000Z'
 draft: false
 ---
 
