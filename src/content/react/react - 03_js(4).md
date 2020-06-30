@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "리액트 프로젝트 - 03 (4) javascript(Promise)"
+title: '리액트 프로젝트 - 03 (4) javascript(Promise)'
 author: Creatijin
-tags: ["react"]
+tags: ['react', 'javascript']
 image: ../img/react-posting-bg.jpg
-date: "2020-06-30T17:05:00.000Z"
-draft: false
+date: '2020-06-30T17:05:00.000Z'
+draft: true
 ---
 
-#리액트 프로젝트 - 03 (4) javascript(Promise)
+# 리액트 프로젝트 - 03 (4) javascript(Promise)
 
 ##Promise
 
@@ -61,7 +61,7 @@ const p1 = new Promise((resolve, reject) => {
   resolve(data);
   //or reject('error msg');
 });
-const p2 = Promise.reject("error msg"); //(1)거부
+const p2 = Promise.reject('error msg'); //(1)거부
 const p3 = Promise.resolve(param); //(2)이행
 ```
 
@@ -79,7 +79,7 @@ Promise가 처리됨 상태가 된다면 then메소드의 인수로 전달된 �
 /* then 메소드를 사용한 간단한 코드 */
 requestData().then(onResolve, onReject);
 Promise.resolve(123).then((data) => console.log(data)); // 123
-Promise.reject("err").then(null, (error) => console.log(error)); // 에러발생!!
+Promise.reject('err').then(null, (error) => console.log(error)); // 에러발생!!
 ```
 
 Promise가 처리됨 상태가 된다면 onResolve 함수가 호출된다. 거부됨 상태가 된다면 onReject함수가 호출된다.
@@ -97,7 +97,7 @@ requestData1()
     return data + 1; //(2)
   })
   .then((data) => {
-    throw new Error("some error"); //(3)
+    throw new Error('some error'); //(3)
   })
   .then(null, (error) => {
     console.log(error);
@@ -113,16 +113,16 @@ requestData1()
 
 ```javascript
 /* 거부됨 상태가 되면 onReject 함수 호출 */
-Promise.reject("err")
-  .then(() => console.log("then 1")) // (1)
-  .then(() => console.log("then 2")) // (1)
+Promise.reject('err')
+  .then(() => console.log('then 1')) // (1)
+  .then(() => console.log('then 2')) // (1)
   .then(
-    () => console.log("then 3"),
-    () => console.log("then 4")
+    () => console.log('then 3'),
+    () => console.log('then 4'),
   ) //(2)
   .then(
-    () => console.log("then 5"),
-    () => console.log("then 6")
+    () => console.log('then 5'),
+    () => console.log('then 6'),
   ); //(3)
 
 // 출력값 then 4 , then 5
@@ -154,18 +154,18 @@ Promise.reject(1).catch((error) => {
 ```javascript
 Promise.resilve().then(
   () => {
-    throw new Error("some error");
+    throw new Error('some error');
   },
   (error) => {
     console.log(error);
-  }
+  },
 );
 // 거부됨 상태인 프로미스를 처리하지 않았기 때문에
 // Unhandled promise rejection 에러가 발생한다.
 // 수정 후
 Promise.resilve()
   .then(() => {
-    throw new Error("some error");
+    throw new Error('some error');
   })
   .catch((error) => {
     console.log(error);
@@ -188,7 +188,7 @@ function requestData() {
       //...
     })
     .finally(() => {
-      sendLogToServer("requestData finished");
+      sendLogToServer('requestData finished');
     });
 }
 requestData().then((data) => console.log(data)); //(1)
