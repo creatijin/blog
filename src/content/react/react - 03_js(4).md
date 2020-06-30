@@ -5,7 +5,7 @@ author: Creatijin
 tags: ['react', 'javascript']
 image: ../img/react-posting-bg.jpg
 date: '2020-06-30T17:05:00.000Z'
-draft: true
+draft: false
 ---
 
 # 리액트 프로젝트 - 03 (4) javascript(Promise)
