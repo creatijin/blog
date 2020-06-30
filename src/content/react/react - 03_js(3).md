@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '리액트 프로젝트 - 05 (5) javascript-test'
+title: '리액트 프로젝트 - 03 (3) javascript'
 author: Creatijin
 tags: ['react', 'javascript']
 image: ../img/react-posting-bg.jpg

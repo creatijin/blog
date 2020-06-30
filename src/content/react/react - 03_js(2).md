@@ -2,7 +2,7 @@
 layout: post
 title: '리액트 프로젝트 - 03 (2) javascript'
 author: Creatijin
-tags: ['react']
+tags: ['react','javascript']
 image: ../img/react-posting-bg.jpg
 date: '2020-04-19T01:56:00.000Z'
 draft: false
