@@ -208,12 +208,12 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({ post }) => {
             {post.frontmatter.image &&
               post.frontmatter.image.childImageSharp &&
               post.frontmatter.image.childImageSharp.fluid && (
-              <Img
-                alt={`${post.frontmatter.title} cover image`}
-                style={{ height: '100%' }}
-                fluid={post.frontmatter.image.childImageSharp.fluid}
-              />
-            )}
+                <Img
+                  alt={`${post.frontmatter.title} cover image`}
+                  style={{ height: '100%' }}
+                  fluid={post.frontmatter.image.childImageSharp.fluid}
+                />
+              )}
           </PostCardImage>
         </Link>
       )}
@@ -230,13 +230,11 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({ post }) => {
         <PostCardMeta className="post-card-meta">
           <AuthorList>
             <AuthorListItem>
-              <AuthorNameTooltip className="author-name-tooltip">
-                {post.frontmatter.author.id}
-              </AuthorNameTooltip>
+              <AuthorNameTooltip className="author-name-tooltip">Creatijin</AuthorNameTooltip>
               <Link css={StaticAvatar} to={`/author/${_.kebabCase(post.frontmatter.author.id)}/`}>
                 <AuthorProfileImage
                   src={post.frontmatter.author.avatar.children[0].fixed.src}
-                  alt={post.frontmatter.author.id}
+                  alt="Creatijin"
                 />
               </Link>
             </AuthorListItem>
